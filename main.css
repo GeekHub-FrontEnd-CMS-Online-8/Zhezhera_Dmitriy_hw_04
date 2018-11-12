@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 30px;
+}
+
+/*TEXT*/
+.text-boxes-title {
+  font-family: "Lato-Light";
+  font-size: 50px;
+  line-height: 50px;
+  color: #3677fd;
+  text-align: center;
+}
+
+/*BUTTONS*/
+.btn {
+  border: none;
+  background: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn--accept {
+  padding: 8px 35px;
+  border-radius: 20px;
+  color: #194277;
+  margin: 0 28px;
+  position: relative;
+  right: -24px;
+}
+
+.btn--accept:hover {
+  background-color: #3399ff;
+  color: white;
+}
+
+.box-second__btn-hire-wrap {
+  text-align: center;
+  margin-top: 84px;
+}
+
+.btn--hire {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #3399ff;
+  text-transform: uppercase;
+  padding: 16px 70px 20px;
+  border-radius: 30px;
+}
+
+.btn--hire:hover {
+  background: #194277;
+  color: white;
+}
+
+/*BOX-FIRST*/
+.box-first {
+  background: #194277;
+  min-height: 72px;
+  text-align: center;
+}
+
+.box-first__content {
+  padding-top: 18px;
+}
+
+.box-first__text {
+  font-family: "Lato-Regular";
+  color: white;
+  font-size: 14px;
+  line-height: 36px;
+  margin: 0;
+  display: inline-block;
+}
+
+/*BOX-SECOND*/
+.box-second {
+  background: url("./img/bg-box-second.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 775px;
+  padding-top: 25px;
+  position: relative;
+}
+
+.box-second:after {
+  position: absolute;
+  content: url("./img/decor-arrow-dn.png");
+  bottom: 20px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.box-second__nav {
+  min-height: 40px;
+  position: relative;
+}
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/*HUMBURGER START*/
+.box-second__nav-hamburger{
+  position: absolute;
+  right: 104px;
+}
+.box-second__nav-hamburger-span
+{
+  display: block;
+}
+.hamburger {
+  /*margin: 0 auto;*/
+  /*margin-top: 30px;*/
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.bar1 {
+  top: 0;
+}
+
+.bar2,
+.bar3 {
+  top: 13.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+/* HAMBURGER 4 */
+
+.hamburger2 .bar2,
+.hamburger3 .bar3,
+.hamburger4 .bar4 {
+  top: 13.5px;
+}
+
+.hamburger4 .bar5 {
+  bottom: 0px;
+}
+
+.hamburger4 .bar {
+  transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.hamburger4 .bar2 {
+  width: 1px;
+  transform: rotate(90deg);
+  left: 13.5px;
+}
+
+.hamburger4 .bar3 {
+  width: 1px;
+  left: 13.5px;
+
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar1 {
+  top: 13.5px;
+  background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar2 {
+  left: 0px;
+  width: 30px;
+  transform: rotate(45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar3 {
+  left: 0;
+  width: 30px;
+  transform: rotate(-45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar4 {
+  background-color: transparent;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar5 {
+  bottom: 13.5px;
+  background-color: transparent;
+}
+
+/*HUMBURGER STOP*/
+
+.box-second__photo-wrap {
+  width: 147px;
+  height: 147px;
+  background: white;
+  border-radius: 50%;
+  margin: 47px auto 0;
+  box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.09), 0 0 0 20px rgba(255, 255, 255, 0.09);
+}
+
+.box-second__title {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: "Lato";
+  letter-spacing: 1.4px;
+  padding: 0 240px;
+  color: white;
+  text-align: center;
+  margin: 60px 0 0;
+}
+
+.box-second__description {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: "Lato-Light";
+  letter-spacing: 0.3px;
+  padding: 0 275px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*.BOX-THIRD*/
+.box-third {
+  min-height: 390px;
+}
+
+.box-third__content {
+  padding-top: 49px;
+}
+
+.box-third__text {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  line-height: 35px;
+  color: #5a5a5a;
+  margin-top: 50px;
+  padding: 0 65px;
+  text-align: center;
+}
+
+/*BOX-FOURTH*/
+.box-fourth {
+  min-height: 1145px;
+  background: #f1f8ff;
+}
+
+.box-fourth__content {
+  padding-top: 47px;
+}
+
+.box-fourth-skills {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 115px 0px 0;
+  padding: 0 10px;
+}
+
+.box-fourth-skill {
+  max-width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.box-fourth-skill__img-wrap {
+  height: 142px;
+}
+
+.box-fourth-skill__img {
+  height: 100%;
+}
+
+.box-fourth-skill__title {
+  font-family: "Lato-Bold";
+  font-size: 24px;
+  line-height: 24px;
+  color: #3677fd;
+  margin: 55px 0 0;
+}
+
+.box-fourth-skill__text {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  line-height: 35px;
+  color: #5a5a5a;
+  padding: 0 18px;
+}
+
+/*BOX-FIFTH__CONTENT*/
+.box-fifth{
+  min-height: 1022px;
+}
+.box-fifth__content {
+  padding-top: 40px;
+}
+
+.box-fifth__works {
+  list-style: none;
+  padding: 0;
+  margin-top: 85px;
+  padding: 0 15px;
+}
+
+.box-fifth__work {
+  display: inline-block;
+  height: 272px;
+  width: 357px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.box-fifth__work-link {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.box-fifth__work-img-wrap {
+  display: table-cell;
+  vertical-align: bottom;
+}
+/*BOX-SIX*/
+.box-six{
+  min-height: 327px;
+}
+.box-six__content{
+  padding-top: 24px;
+}
+.box-six__clients{
+  margin-top: 65px;
+  padding: 0;
+  list-style: none;
+}
+.box-six__client{
+  position: relative;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+.box-six__client--microsoft{
+  right: -30px;
+}
+.box-six__client--samsung{
+  right: -18px;
+  top: -7px;
+}
+.box-six__client--ibm{
+  top: 4px;
+  left: 27px;
+}
+.box-six__client--google{
+  top: 6px;
+  left: 15px;
+}
+/*BOX-SEVEN*/
+.box-seven{
+  min-height: 247px;
+  background: url("./img/bg-box-seven.png") no-repeat center;
+  background-size: cover;
+}
+.box-seven__text{
+  display: inline-block;
+  font-family: "Lato-Light";
+  font-size: 50px;
+  line-height: 65px;
+  color: white;
+  margin: 86px 28px;
+}
+.box-seven__text--bold{
+  font-family: "Lato-Bold";
+}
+.btn--hire-seven{
+  position: relative;
+  bottom: 8px;
+  left: 25px;
+}
